@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.title{
+    text-align: center;
+    color: dodgerblue;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+
+    /* davomiyligi */
+    transition-duration: 0.5s;
+    /* kutish vaqti */
+    transition-delay: 0s;
+    /* nima uchun ishlashligi */
+    transition-property: border-radius;
+    /* holati */
+    transition-timing-function: linear;
+
+    /* property -> duration -> timing-function -> delay */
+    transition: border-radius 1s linear 0s; 
+}
+.box:hover{
+    background-color: dodgerblue;
+    transform: translateX(50px);
+    border-radius: 50%;
+ 
+    /* transition-duration: 1s; */
+}
+.container{
+    width: 400px;
+    height: 200px;
+    /* RGB -> colors --> red - green - blue */
+    /* background: rgb(45,30,255); */
+
+    /* hex code - color */
+    /* background: #ff0000; */
+    /* background: rgba(0, 0, 150, 0.7); */
+    transform: translateY(50px);
+    /* HEX code with alpha */
+    background: #00ff0099;
+
+    
+    
+    margin: auto;
+}
+.photo{
+    width: 300px;
+    transform: translateY(-50px);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.photo:hover{
+    opacity: 1;
+}
